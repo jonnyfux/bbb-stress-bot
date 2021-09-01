@@ -1,7 +1,7 @@
 const bigbluebot = require('bigbluebot');
 
 const actions = async page => {
-  await bigbluebot.video.join(page);
+    await bigbluebot.audio.modal.microphone(page);
 };
 
 bigbluebot.run(actions);
